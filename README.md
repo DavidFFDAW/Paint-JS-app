@@ -1,6 +1,6 @@
 # Paint Application
 
-This is basically the classic Application all of us have used at some time in our lives but made with VanillaJS.
+This is basically the classic Application all of us have used at some point in our lives but made with VanillaJS.
 
 ## License
 
