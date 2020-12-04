@@ -44,3 +44,14 @@
             background-color: #eeeeee;
             border: 2px solid crimson;
         }
+        footer{
+            display: block;
+            position: sticky;
+            margin-top: 10%;
+            padding: 20px;
+            width: 98%;
+            text-align: justify;
+            background-color: lavender;
+            border-top: 2px solid lightslategrey;
+            border-radius: 8px;
+        }
