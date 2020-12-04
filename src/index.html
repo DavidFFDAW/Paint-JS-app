@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style/stylesheet.css">
+    <title>JavaScript - Paint</title>
+</head>
+<body>
+    <!--¿ Possibility of adding the buttons from a json ?-->
+    <div class="container">
+        <nav class="nav-bar">
+            <button id="btnBack" value="back"><i class="fas fa-undo"></i></button>
+            <button id="btnForward" value="forward"><i class="fas fa-redo"></i></button>
+            <button id="btnPencil" value="pencil"><i class="fas fa-paint-brush"></i></button>
+            <button id="btnRellenate" value="rellenate"><i class="fas fa-fill-drip"></i></i></button>
+            <input id="btnColor" type="color">
+            <button id="figure" value="figure"><i class="far fa-square"></i>&nbsp;|&nbsp;<i class="fas fa-caret-down"></i></button>
+            <!-- ↑ Figure Type Drop-Down ↑ -->
+            <button id="line" value="line-height"><i class="far fa-dot-circle"></i>&nbsp;|&nbsp;<i class="fas fa-caret-down"></i></button>
+            <!-- ↑ Line Thickness Drop-Down ↑ -->
+        </nav>
+        <main>
+            <canvas class="canvas"></canvas>
+        </main>
+        <div class="foot-bar">
+            <button id="btnClear" value="clear"><i class="fas fa-ban"></i>&nbsp; Borrar lienzo</button>
+            <button id="btnDownload" value="download"><i class="fas fa-download"></i>&nbsp; Descargar lienzo</button>
+        </div>
+    </div>    
+</body>
+</html>
