@@ -1,0 +1,46 @@
+
+        @import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css";
+
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .container{
+            width: 50%;
+            background-color: #cecece;
+            border: 3px solid crimson;
+            border-radius: 20px;
+            padding: 10px;
+        }
+        .nav-bar, .foot-bar{
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        button{
+            display: inline;
+            padding-top: 4px;
+            padding-bottom: 4px;
+            padding-left: 20px;
+            padding-right: 20px; 
+        }
+        .foot-bar{
+            float: right;
+        }
+        main{
+            position: relative;
+            width: 92%;
+            margin-bottom: 12px;
+            margin-top: 12px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .canvas{
+            position: relative;
+            width: 100%;
+            background-color: #eeeeee;
+            border: 1px solid black;
+        }
+        div .foot-bar{
+            background-color: #eeeeee;
+            border: 2px solid crimson;
+        }
