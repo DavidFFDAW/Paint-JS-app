@@ -1,6 +1,5 @@
-# Files that start with test.[whatever] that are my tests
-test.*.html
-test.*.js
+# Files that start with test.[whatever]... that are my tests
+test.*.*
 
 
 # Logs
