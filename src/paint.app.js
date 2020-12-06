@@ -1,0 +1,1 @@
+new PaintController(new PaintServices(), new PaintView());
