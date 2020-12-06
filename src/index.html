@@ -6,23 +6,74 @@
     <link rel="stylesheet" href="./assets/style/stylesheet.css">
     <link rel="icon" href="./assets/images/paint-palette.svg">
     <title>JavaScript - Paint</title>
+    <style>
+        .fig-dropdown{
+            display: inline;
+        }
+        .fig-dropdown-content{
+            display: none;
+            position: relative;
+            width: 100px;
+        }
+        .fig-dropdown:hover .fig-dropdown-content{
+            display: block;
+        }
+        .fig-dropdown-content button{
+            display: block;
+            width: 100%;
+        }
+        .line-dropdown{
+            display: inline;
+        }
+        .line-dropdown-content{
+            display: none;
+            width: 50px;
+            position: relative;
+            float: right;
+            right: 132px;
+        }
+        .line-dropdown-content button{
+            display: block;
+            border: 2px solid darkblue;
+            border-top: none;
+            padding: 2px;
+            width: 100%;
+        }
+        .line-dropdown:hover .line-dropdown-content{
+            display: block;
+        }
+    </style>
 </head>
 <body>
     <!--¿ Possibility of adding the buttons from a json ?-->
     <div class="container">
         <nav class="nav-bar">
-            <button id="btnBack" value="back"><i class="fas fa-undo"></i></button>
-            <button id="btnForward" value="forward"><i class="fas fa-redo"></i></button>
+            <button id="btnUndo" value="back"><i class="fas fa-undo"></i></button>
+            <button id="btnRedo" value="forward"><i class="fas fa-redo"></i></button>
             <button id="btnPencil" value="pencil"><i class="fas fa-paint-brush"></i></button>
-            <button id="btnRellenate" value="rellenate"><i class="fas fa-fill-drip"></i></i></button>
+            <button id="btnRubber" value="rubber"><i class="fas fa-eraser"></i></button>
+            <button id="btnFill" value="fill"><i class="fas fa-fill-drip"></i></i></button>
             <input id="btnColor" type="color">
-            <button id="figure" value="figure"><i class="far fa-square"></i>&nbsp;|&nbsp;<i class="fas fa-caret-down"></i></button>
-            <!-- ↑ Figure Type Drop-Down ↑ -->
-            <button id="line" value="line-height"><i class="far fa-dot-circle"></i>&nbsp;|&nbsp;<i class="fas fa-caret-down"></i></button>
+            <!-- <div class="fig-dropdown">
+                <button type="button"><i class="far fa-square"></i>&nbsp;|&nbsp;<i class="fas fa-caret-down"></i></button>
+                <div class="fig-dropdown-content">
+                    <button type="button" id="btnCircle">Circulito</button>
+                </div>
+            </div> -->
+            <div class="line-dropdown">
+                <button><i class="far fa-dot-circle"></i>&nbsp;|&nbsp;<i class="fas fa-caret-down"></i></button>
+                <div class="line-dropdown-content">
+                    <button type="button" id="lineWidth1px">1px</button>
+                    <button type="button" id="lineWidth2px">2px</button>
+                    <button type="button" id="lineWidth3px">3px</button>
+                    <button type="button" id="lineWidth4px">4px</button>
+                    <button type="button" id="lineWidth5px">5px</button>
+                </div>
+            </div>
             <!-- ↑ Line Thickness Drop-Down ↑ -->
         </nav>
         <main>
-            <canvas class="canvas"></canvas>
+            <canvas class="canvas" id="canvas"></canvas>
         </main>
         <div class="foot-bar">
             <button id="btnClear" value="clear"><i class="fas fa-ban"></i>&nbsp; Borrar lienzo</button>
@@ -33,5 +84,12 @@
         <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
         <div>@Copyright: This page has been done by <a href="https://github.com/DavidFFDAW">David Fernández Flores</a></div>
     </footer>
+    
+    
+    <script src="./views/paint.view.js"></script>
+    <script src="./models/paint.model.js"></script>
+    <script src="./services/paint.service.js"></script>
+    <script src="./controllers/paint.controller.js"></script>
+    <script src="./paint.app.js"></script>
 </body>
 </html>
